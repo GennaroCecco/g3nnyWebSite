@@ -53,9 +53,10 @@ Web developer
 
         <div class="info-content">
           <h1 class="name" title="Gennaro Cecco">Gennaro Cecco</h1>
-          <p class="title">Software Developer</p>
+          <p class="title">Software Engineering</p>
         </div>
-        <p class="fraseMotivazionale">"You have to learn the rules of the game. And then you have to play better than anyone else."<br> - Albert Einstein</p>
+        <p class="fraseMotivazionale">"You have to learn the rules of the game. And then you have to play better than
+          anyone else."<br> - Albert Einstein</p>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -144,7 +145,7 @@ Web developer
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-          
+
           <li class="social-item">
             <a href="https://www.linkedin.com/in/gennaro-cecco-
             19987a226/" class="social-link" target="_blank">
@@ -157,37 +158,31 @@ Web developer
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-          
-          <li class="social-item">
-            <a href="#" id="downloadLink" class="social-link">
-              <ion-icon name="code-download-outline"></ion-icon>
-            </a>
-          </li>
         </ul>
 
       </div>
 
     </aside>
 
-<script>
+    <script>
 
-document.getElementById('downloadLink').addEventListener('click', function() {
-  // Crea un oggetto di ancoraggio temporaneo
-  var tempLink = document.createElement('a');
-  tempLink.href = 'link_al_tuo_file.pdf';
-  tempLink.download = 'Il_Tuo_Curriculum.pdf';
+      document.getElementById('downloadLink').addEventListener('click', function () {
+        // Crea un oggetto di ancoraggio temporaneo
+        var tempLink = document.createElement('a');
+        tempLink.href = 'link_al_tuo_file.pdf';
+        tempLink.download = 'Il_Tuo_Curriculum.pdf';
 
-  // Aggiungi l'ancora temporanea al documento
-  document.body.appendChild(tempLink);
+        // Aggiungi l'ancora temporanea al documento
+        document.body.appendChild(tempLink);
 
-  // Simula un clic sull'ancora temporanea per avviare il download
-  tempLink.click();
+        // Simula un clic sull'ancora temporanea per avviare il download
+        tempLink.click();
 
-  // Rimuovi l'ancora temporanea dal documento
-  document.body.removeChild(tempLink);
+        // Rimuovi l'ancora temporanea dal documento
+        document.body.removeChild(tempLink);
 
-});
-</script>
+      });
+    </script>
 
 
 
@@ -233,10 +228,13 @@ document.getElementById('downloadLink').addEventListener('click', function() {
 
         <section class="about-text">
           <p>
-            I am a person open to public relations, capable of connecting with any individual. I consider myself creative and proactive with
-             a strong ambition and enthusiasm for continuous skill development, coupled with a strong sense of duty. My constant pursuit of 
-             new challenges and opportunities to advance in my profession demonstrates my determination to improve skills and tackle new 
-             projects with passion.
+            I am a person open to public relations, capable of connecting with any individual. I consider myself
+            creative and proactive with
+            a strong ambition and enthusiasm for continuous skill development, coupled with a strong sense of duty. My
+            constant pursuit of
+            new challenges and opportunities to advance in my profession demonstrates my determination to improve skills
+            and tackle new
+            projects with passion.
           </p>
         </section>
 
@@ -250,104 +248,105 @@ document.getElementById('downloadLink').addEventListener('click', function() {
           <h3 class="h3 service-title">My projects</h3>
 
           <ul class="service-list">
-          <a href="https://github.com/GennaroCecco/iTeam" class="a-projects" target="_blank">
-            <li class="service-item">
+            <a href="https://github.com/GennaroCecco/iTeam" class="a-projects" target="_blank">
+              <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/FIAntastici4.png
+                <div class="service-icon-box">
+                  <img src="./assets/images/FIAntastici4.png
                 " alt="FIAntastici4 icon" width="100px">
-              </div>
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">iTeam</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">iTeam</h4>
 
-                <p class="service-item-text">
-                  iTeam is a project capable of creating teams of employees based on the 
-                  requirements of the project that has to be carried out.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    iTeam is a project capable of creating teams of employees based on the
+                    requirements of the project that has to be carried out.
+                  </p>
+                </div>
 
-            </li>
-          </a>
-          
-          <a href="https://github.com/GennaroCecco/ProgettoTSW2021" class="a-projects" target="_blank">
+              </li>
+            </a>
 
-            <li class="service-item">
+            <a href="https://github.com/GennaroCecco/ProgettoTSW2021" class="a-projects" target="_blank">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/pc_world.png" alt="pc world icon" width="100px">
-              </div>
+              <li class="service-item">
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">PCWorld</h4>
+                <div class="service-icon-box">
+                  <img src="./assets/images/pc_world.png" alt="pc world icon" width="100px">
+                </div>
 
-                <p class="service-item-text">
-                  PCWorld is an e-commerce dedicated to expert and non-expert users who are looking for 
-                  pre-assembled PCs or individual components for their computer.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">PCWorld</h4>
 
-            </li>
-          </a>
-          <a href="https://github.com/SystemFormation/AgencyFormation" class="a-projects" target="_blank">
-            <li class="service-item">
+                  <p class="service-item-text">
+                    PCWorld is an e-commerce dedicated to expert and non-expert users who are looking for
+                    pre-assembled PCs or individual components for their computer.
+                  </p>
+                </div>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/agency.png" alt="agency Formation icon" width="100px">
-              </div>
+              </li>
+            </a>
+            <a href="https://github.com/SystemFormation/AgencyFormation" class="a-projects" target="_blank">
+              <li class="service-item">
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Agency Formation</h4>
+                <div class="service-icon-box">
+                  <img src="./assets/images/agency.png" alt="agency Formation icon" width="100px">
+                </div>
 
-                <p class="service-item-text">
-                  Agency Formations a project for employee management.
-                  <br><br><br><br>
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Agency Formation</h4>
 
-            </li>
-          </a>
-          
-          <a href="https://github.com/GennaroCecco/Unity_Projects" class="a-projects" target="_blank">
+                  <p class="service-item-text">
+                    Agency Formations a project for employee management.
+                    <br><br><br><br>
+                  </p>
+                </div>
 
-            <li class="service-item">
+              </li>
+            </a>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/unityIcon.png" alt="unity icon" width="100px">
-              </div>
+            <a href="https://github.com/GennaroCecco/Unity_Projects" class="a-projects" target="_blank">
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Unity Projects</h4>
+              <li class="service-item">
 
-                <p class="service-item-text">
-                  A set of unity projects
-                  <br><br><br><br><br>
+                <div class="service-icon-box">
+                  <img src="./assets/images/unityIcon.png" alt="unity icon" width="100px">
+                </div>
 
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Unity Projects</h4>
 
-            </li>
-          </a>
+                  <p class="service-item-text">
+                    A set of unity projects
+                    <br><br><br><br><br>
 
-          <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" class="a-projects" target="_blank">
-            <li class="service-item">
+                  </p>
+                </div>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/rnniconInvert.png" alt="rnn icon" width="100px">
-              </div>
+              </li>
+            </a>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">RNN-Sentiment Analysis</h4>
+            <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" class="a-projects" target="_blank">
+              <li class="service-item">
 
-                <p class="service-item-text">
-                  My thesis work is based on the development of 3 RNN models (LSTM, BiLSTM, GRU) for sentiment analysis. 
-                  In detail we compare and evaluate the performance of these 3 models.                  <br><br><br><br><br>
+                <div class="service-icon-box">
+                  <img src="./assets/images/rnniconInvert.png" alt="rnn icon" width="100px">
+                </div>
 
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">RNN-Sentiment Analysis</h4>
 
-            </li>
-          </a>
+                  <p class="service-item-text">
+                    My thesis work is based on the development of 3 RNN models (LSTM, BiLSTM, GRU) for sentiment
+                    analysis.
+                    In detail we compare and evaluate the performance of these 3 models. <br><br><br><br><br>
+
+                  </p>
+                </div>
+
+              </li>
+            </a>
           </ul>
 
         </section>
@@ -385,9 +384,14 @@ document.getElementById('downloadLink').addEventListener('click', function() {
 
               <h4 class="h4 timeline-item-title">Università degli Studi di Salerno</h4>
 
-              <span>2019 — In progress</span>
+              <span>2019 — 2023</span>
 
-          
+              <p class="timeline-text">
+                I earned a Bachelor's degree in Computer Science, focusing on software development,
+                algorithms, databases, and web programming. During my studies,
+                I worked on practical projects that allowed me to apply theoretical knowledge
+                to real-world scenarios and develop strong problem-solving skills.
+              </p>
 
 
             <li class="timeline-item">
@@ -397,7 +401,8 @@ document.getElementById('downloadLink').addEventListener('click', function() {
               <span>2016 — 2019</span>
 
               <p class="timeline-text">
-                I completed my final years of high school at the I.I.S. 'G. Marconi' institute, with a focus on computer science.
+                I completed my final years of high school at the I.I.S. 'G. Marconi' institute, with a focus on computer
+                science.
               </p>
 
 
@@ -418,208 +423,220 @@ document.getElementById('downloadLink').addEventListener('click', function() {
 
         </section>
 
-        <div class="skills-container">
-        <section class="skill">
+        <!--ESPERIENZE LAVORATIVE-->
+        <section class="timeline">
 
-          <h3 class="h3 skills-title">My skills</h3>
-         
-          <ul class="skills-list content-card ">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Work Experience</h3>
+          </div>
 
-            <li class="skills-item">
+          <ol class="timeline-list">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineering - Lutech SpA</h4>
+              <span>May 2024 — Present</span>
+              <p class="timeline-text">
+                As a Software Engineer at Lutech SpA, I contribute to full-stack development projects, building and 
+                optimizing web applications with Java, SQL, and frontend technologies including HTML, CSS, JavaScript, Ajax, 
+                and Bootstrap. I implement new features, improve application performance, and maintain comprehensive s
+                oftware documentation to ensure quality and maintainability. I also work on interoperability solutions 
+                to enable seamless integration between systems. Additionally, I leverage Qlik Cloud for data visualization 
+                and integration, and work with REST APIs to facilitate smooth communication between applications, 
+                enhancing both functionality and user experience.
+              </p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-            
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTLM</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Developer - IT.SVIL</h4>
+              <span>January 2024 — April 2024</span>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Unity</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java for Android</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Team Working</h5>
-                <data value="100">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Critical thinking</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Problem Solving</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Decision-making</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Open-mindedness</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            
-
-          </ul>
-          <div class="pagination">
-            <button class="prev-button">Back</button>
-            <button class="next-button">Next</button>
-        </div>
+          </ol>
         </section>
-      </div>
 
+
+        <div class="skills-container">
+          <section class="skill">
+
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card ">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTLM</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Unity</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java for Android</h5>
+                  <data value="70">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Bootstrap</h5>
+                  <data value="80">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Qlik Cloud</h5>
+                  <data value="50">50%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">REST APIs</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+              </li>
+
+              <!--SOFT SKILLS-->
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Team Working</h5>
+                  <data value="100">100%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Problem Solving</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Critical Thinking</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Decision Making</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%;"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Open-mindedness</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <button class="prev-button">Back</button>
+              <button class="next-button">Next</button>
+            </div>
+          </section>
+        </div>
       </article>
-
-
-
     </div>
-
   </main>
-
-
-
-
-
-
   <!--
     - custom js link
   -->
