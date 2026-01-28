@@ -1,66 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <!--
-Template Richard hanrick
-Web developer
-
+Portfolio Gennaro Cecco
 -->
-
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard-Gennaro_Cecco - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  
+  <!-- SEO Meta Tags -->
+  <title>Gennaro Cecco - Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio di Gennaro Cecco, Software Engineer specializzato in sviluppo full-stack, Java, web development e machine learning.">
+  <meta name="keywords" content="Gennaro Cecco, Software Engineer, Developer, Java, Web Development, Machine Learning, Portfolio">
+  <meta name="author" content="Gennaro Cecco">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Gennaro Cecco - Software Engineer Portfolio">
+  <meta property="og:description" content="Portfolio di Gennaro Cecco, Software Engineer specializzato in sviluppo full-stack">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+  
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts - Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
+  <!-- MAIN -->
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Gennaro Cecco" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Gennaro Cecco" width="120" loading="lazy">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Gennaro Cecco">Gennaro Cecco</h1>
-          <p class="title">Software Engineering</p>
+          <p class="title">Software Engineer</p>
         </div>
-        <p class="fraseMotivazionale">"You have to learn the rules of the game. And then you have to play better than
-          anyone else."<br> - Albert Einstein</p>
+        <p class="fraseMotivazionale">"You have to learn the rules of the game. And then you have to play better than anyone else." <br>- Albert Einstein</p>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button class="info_more-btn" data-sidebar-btn aria-label="Toggle contact information">
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -73,59 +68,43 @@ Web developer
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:gennarocecco122@gmail.com" class="contact-link">gennarocecco122<br>@gmail.com</a>
+              <a href="mailto:gennarocecco122@gmail.com" class="contact-link">gennarocecco122@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
-              <a href="tel:+39 3760510635" class="contact-link">+39 376-0510635</a>
+              <a href="tel:+393760510635" class="contact-link">+39 376-0510635</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">BirthDay</p>
-
+              <p class="contact-title">Birthday</p>
               <time datetime="2000-10-11">October 11, 2000</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Boscotrecase, Naples, Italy</address>
             </div>
-
           </li>
 
         </ul>
@@ -135,73 +114,51 @@ Web developer
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.facebook.com/gennaro.cecco?locale=it_IT" class="social-link" target="_blank">
+            <a href="https://www.facebook.com/gennaro.cecco?locale=it_IT" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" class="social-link" target="_blank">
+            <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/gennaro-cecco-
-            19987a226/" class="social-link" target="_blank">
+            <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/GennaroCecco" class="social-link" target="_blank">
+            <a href="https://github.com/GennaroCecco" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
+
+          <li class="social-item">
+            <a href="./assets/documents/CV_Gennaro_Cecco.pdf" download="CV_Gennaro_Cecco.pdf" class="social-link" title="Download CV" aria-label="Download CV">
+              <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </li>
+
         </ul>
 
       </div>
 
     </aside>
 
-    <script>
-
-      document.getElementById('downloadLink').addEventListener('click', function () {
-        // Crea un oggetto di ancoraggio temporaneo
-        var tempLink = document.createElement('a');
-        tempLink.href = 'link_al_tuo_file.pdf';
-        tempLink.download = 'Il_Tuo_Curriculum.pdf';
-
-        // Aggiungi l'ancora temporanea al documento
-        document.body.appendChild(tempLink);
-
-        // Simula un clic sull'ancora temporanea per avviare il download
-        tempLink.click();
-
-        // Rimuovi l'ancora temporanea dal documento
-        document.body.removeChild(tempLink);
-
-      });
-    </script>
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- MAIN CONTENT -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- NAVBAR -->
       <nav class="navbar">
 
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -212,15 +169,8 @@ Web developer
 
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about" id="aboutPage">
+      <!-- ABOUT -->
+      <article class="about active" data-page="about" id="aboutPage">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -229,139 +179,99 @@ Web developer
         <section class="about-text">
           <p>
             I am a person open to public relations, capable of connecting with any individual. I consider myself
-            creative and proactive with
-            a strong ambition and enthusiasm for continuous skill development, coupled with a strong sense of duty. My
-            constant pursuit of
-            new challenges and opportunities to advance in my profession demonstrates my determination to improve skills
-            and tackle new
-            projects with passion.
+            creative and proactive with a strong ambition and enthusiasm for continuous skill development, coupled with a strong sense of duty. My
+            constant pursuit of new challenges and opportunities to advance in my profession demonstrates my determination to improve skills
+            and tackle new projects with passion.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- SERVICE/PROJECTS -->
         <section class="service">
 
-          <h3 class="h3 service-title">My projects</h3>
+          <h3 class="h3 service-title">My Projects</h3>
 
           <ul class="service-list">
-            <a href="https://github.com/GennaroCecco/iTeam" class="a-projects" target="_blank">
+            
+            <a href="https://github.com/GennaroCecco/iTeam" class="a-projects" target="_blank" rel="noopener noreferrer">
               <li class="service-item">
-
                 <div class="service-icon-box">
-                  <img src="./assets/images/FIAntastici4.png
-                " alt="FIAntastici4 icon" width="100px">
+                  <img src="./assets/images/FIAntastici4.png" alt="iTeam Project Icon" width="100" loading="lazy">
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">iTeam</h4>
-
                   <p class="service-item-text">
                     iTeam is a project capable of creating teams of employees based on the
                     requirements of the project that has to be carried out.
                   </p>
                 </div>
-
               </li>
             </a>
 
-            <a href="https://github.com/GennaroCecco/ProgettoTSW2021" class="a-projects" target="_blank">
-
+            <a href="https://github.com/GennaroCecco/ProgettoTSW2021" class="a-projects" target="_blank" rel="noopener noreferrer">
               <li class="service-item">
-
                 <div class="service-icon-box">
-                  <img src="./assets/images/pc_world.png" alt="pc world icon" width="100px">
+                  <img src="./assets/images/pc_world.png" alt="PCWorld Project Icon" width="100" loading="lazy">
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">PCWorld</h4>
-
                   <p class="service-item-text">
                     PCWorld is an e-commerce dedicated to expert and non-expert users who are looking for
                     pre-assembled PCs or individual components for their computer.
                   </p>
                 </div>
-
               </li>
             </a>
-            <a href="https://github.com/SystemFormation/AgencyFormation" class="a-projects" target="_blank">
+
+            <a href="https://github.com/SystemFormation/AgencyFormation" class="a-projects" target="_blank" rel="noopener noreferrer">
               <li class="service-item">
-
                 <div class="service-icon-box">
-                  <img src="./assets/images/agency.png" alt="agency Formation icon" width="100px">
+                  <img src="./assets/images/agency.png" alt="Agency Formation Project Icon" width="100" loading="lazy">
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Agency Formation</h4>
-
                   <p class="service-item-text">
-                    Agency Formations a project for employee management.
-                    <br><br><br><br>
+                    Agency Formation is a project for employee management and organizational structuring.
                   </p>
                 </div>
-
               </li>
             </a>
 
-            <a href="https://github.com/GennaroCecco/Unity_Projects" class="a-projects" target="_blank">
-
+            <a href="https://github.com/GennaroCecco/Unity_Projects" class="a-projects" target="_blank" rel="noopener noreferrer">
               <li class="service-item">
-
                 <div class="service-icon-box">
-                  <img src="./assets/images/unityIcon.png" alt="unity icon" width="100px">
+                  <img src="./assets/images/unityIcon.png" alt="Unity Projects Icon" width="100" loading="lazy">
                 </div>
-
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Unity Projects</h4>
-
                   <p class="service-item-text">
-                    A set of unity projects
-                    <br><br><br><br><br>
-
+                    A collection of Unity game development projects exploring various mechanics and interactive experiences.
                   </p>
                 </div>
-
               </li>
             </a>
 
-            <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" class="a-projects" target="_blank">
+            <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" class="a-projects" target="_blank" rel="noopener noreferrer">
               <li class="service-item">
-
                 <div class="service-icon-box">
-                  <img src="./assets/images/rnniconInvert.png" alt="rnn icon" width="100px">
+                  <img src="./assets/images/rnniconInvert.png" alt="RNN Sentiment Analysis Icon" width="100" loading="lazy">
                 </div>
-
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">RNN-Sentiment Analysis</h4>
-
+                  <h4 class="h4 service-item-title">RNN Sentiment Analysis</h4>
                   <p class="service-item-text">
                     My thesis work is based on the development of 3 RNN models (LSTM, BiLSTM, GRU) for sentiment
-                    analysis.
-                    In detail we compare and evaluate the performance of these 3 models. <br><br><br><br><br>
-
+                    analysis. In detail, we compare and evaluate the performance of these 3 models.
                   </p>
                 </div>
-
               </li>
             </a>
+
           </ul>
 
         </section>
 
-
       </article>
 
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
+      <!-- RESUME -->
       <article class="resume" data-page="resume">
 
         <header>
@@ -374,56 +284,43 @@ Web developer
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Università degli Studi di Salerno</h4>
-
               <span>2019 — 2023</span>
-
               <p class="timeline-text">
                 I earned a Bachelor's degree in Computer Science, focusing on software development,
                 algorithms, databases, and web programming. During my studies,
                 I worked on practical projects that allowed me to apply theoretical knowledge
                 to real-world scenarios and develop strong problem-solving skills.
               </p>
-
+            </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">I.I.S. "G. Marconi"</h4>
-
               <span>2016 — 2019</span>
-
               <p class="timeline-text">
-                I completed my final years of high school at the I.I.S. 'G. Marconi' institute, with a focus on computer
-                science.
+                I completed my final years of high school at the I.I.S. 'G. Marconi' institute, with a focus on computer science.
               </p>
-
+            </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">Ernesto Cesaro Higher Institute</h4>
-
               <span>2014 — 2016</span>
-
               <p class="timeline-text">
-                For the first two years of high school I studied at the Ernesto Cesaro Higher Institute
-                eos.
+                For the first two years of high school I studied at the Ernesto Cesaro Higher Institute.
               </p>
-
             </li>
 
           </ol>
 
         </section>
 
-        <!--ESPERIENZE LAVORATIVE-->
+        <!-- WORK EXPERIENCE -->
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -436,13 +333,13 @@ Web developer
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineering - Lutech SpA</h4>
+              <h4 class="h4 timeline-item-title">Software Engineer - Lutech SpA</h4>
               <span>May 2024 — Present</span>
               <p class="timeline-text">
                 As a Software Engineer at Lutech SpA, I contribute to full-stack development projects, building and 
                 optimizing web applications with Java, SQL, and frontend technologies including HTML, CSS, JavaScript, Ajax, 
-                and Bootstrap. I implement new features, improve application performance, and maintain comprehensive s
-                oftware documentation to ensure quality and maintainability. I also work on interoperability solutions 
+                and Bootstrap. I implement new features, improve application performance, and maintain comprehensive software 
+                documentation to ensure quality and maintainability. I also work on interoperability solutions 
                 to enable seamless integration between systems. Additionally, I leverage Qlik Cloud for data visualization 
                 and integration, and work with REST APIs to facilitate smooth communication between applications, 
                 enhancing both functionality and user experience.
@@ -452,21 +349,27 @@ Web developer
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Software Developer - IT.SVIL</h4>
               <span>January 2024 — April 2024</span>
+              <p class="timeline-text">
+                Contributed to software development projects, gaining hands-on experience in full-stack development 
+                and collaborative team environments.
+              </p>
             </li>
 
           </ol>
+
         </section>
 
-
+        <!-- SKILLS -->
         <div class="skills-container">
           <section class="skill">
 
-            <h3 class="h3 skills-title">My skills</h3>
+            <h3 class="h3 skills-title">My Skills</h3>
 
-            <ul class="skills-list content-card ">
+            <ul class="skills-list content-card">
+              
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Web design</h5>
+                  <h5 class="h5">Web Design</h5>
                   <data value="90">90%</data>
                 </div>
                 <div class="skill-progress-bg">
@@ -484,10 +387,9 @@ Web developer
                 </div>
               </li>
 
-
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">HTLM</h5>
+                  <h5 class="h5">HTML</h5>
                   <data value="80">80%</data>
                 </div>
                 <div class="skill-progress-bg">
@@ -540,7 +442,6 @@ Web developer
                   <h5 class="h5">Python</h5>
                   <data value="65">65%</data>
                 </div>
-
                 <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 65%;"></div>
                 </div>
@@ -549,7 +450,7 @@ Web developer
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">Bootstrap</h5>
-                  <data value="80">60%</data>
+                  <data value="60">60%</data>
                 </div>
                 <div class="skill-progress-bg">
                   <div class="skill-progress-fill" style="width: 60%;"></div>
@@ -576,7 +477,7 @@ Web developer
                 </div>
               </li>
 
-              <!--SOFT SKILLS-->
+              <!-- SOFT SKILLS -->
 
               <li class="skills-item">
                 <div class="title-wrapper">
@@ -627,24 +528,27 @@ Web developer
                   <div class="skill-progress-fill" style="width: 90%;"></div>
                 </div>
               </li>
+
             </ul>
+
             <div class="pagination">
-              <button class="prev-button">Back</button>
-              <button class="next-button">Next</button>
+              <button class="prev-button" aria-label="Previous skills">Back</button>
+              <button class="next-button" aria-label="Next skills">Next</button>
             </div>
+
           </section>
         </div>
+
       </article>
+
     </div>
+
   </main>
-  <!--
-    - custom js link
-  -->
+
+  <!-- Custom JS -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!-- Ionicon -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
