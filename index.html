@@ -1,555 +1,743 @@
 <!DOCTYPE html>
 <html lang="it">
-<!--
-Portfolio Gennaro Cecco
--->
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>Gennaro Cecco - Software Engineer Portfolio</title>
-  <meta name="description" content="Portfolio di Gennaro Cecco, Software Engineer specializzato in sviluppo full-stack, Java, web development e machine learning.">
-  <meta name="keywords" content="Gennaro Cecco, Software Engineer, Developer, Java, Web Development, Machine Learning, Portfolio">
+  <meta name="description" content="Gennaro Cecco - Software Engineer Portfolio | Full-stack Developer specializzato in Java, Web Development e Machine Learning">
   <meta name="author" content="Gennaro Cecco">
   
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Gennaro Cecco - Software Engineer Portfolio">
-  <meta property="og:description" content="Portfolio di Gennaro Cecco, Software Engineer specializzato in sviluppo full-stack">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/images/my-avatar.png">
+  <title>Gennaro Cecco | Software Engineer</title>
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- Google Fonts - Preconnect for performance -->
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- MAIN -->
-  <main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Gennaro Cecco" width="120" loading="lazy">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Gennaro Cecco">Gennaro Cecco</h1>
-          <p class="title">Software Engineer</p>
-        </div>
-        <p class="fraseMotivazionale">"You have to learn the rules of the game. And then you have to play better than anyone else." <br>- Albert Einstein</p>
-
-        <button class="info_more-btn" data-sidebar-btn aria-label="Toggle contact information">
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+  <!-- Loader -->
+  <div id="loader" class="loader-wrapper">
+    <div class="loader">
+      <div class="loader-text">
+        <span class="letter">G</span>
+        <span class="letter">E</span>
+        <span class="letter">N</span>
+        <span class="letter">N</span>
+        <span class="letter">A</span>
+        <span class="letter">R</span>
+        <span class="letter">O</span>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:gennarocecco122@gmail.com" class="contact-link">gennarocecco122@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+393760510635" class="contact-link">+39 376-0510635</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2000-10-11">October 11, 2000</time>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Boscotrecase, Naples, Italy</address>
-            </div>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" class="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" aria-label="LinkedIn Profile">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/GennaroCecco" class="social-link" target="_blank" rel="noopener noreferrer" title="GitHub Profile" aria-label="GitHub Profile">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="./assets/documents/CV_GENNARO_CECCO.pdf" download="CV_Gennaro_Cecco.pdf" class="social-link" title="Download CV" aria-label="Download CV">
-              <ion-icon name="download-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
       </div>
-
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-
-      <!-- NAVBAR -->
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!-- ABOUT -->
-      <article class="about active" data-page="about" id="aboutPage">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a person open to public relations, capable of connecting with any individual. I consider myself
-            creative and proactive with a strong ambition and enthusiasm for continuous skill development, coupled with a strong sense of duty. My
-            constant pursuit of new challenges and opportunities to advance in my profession demonstrates my determination to improve skills
-            and tackle new projects with passion.
-          </p>
-        </section>
-
-        <!-- SERVICE/PROJECTS -->
-        <section class="service">
-
-          <h3 class="h3 service-title">My Projects</h3>
-
-          <ul class="service-list">
-            
-            <a href="https://github.com/GennaroCecco/iTeam" class="a-projects" target="_blank" rel="noopener noreferrer">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/FIAntastici4.png" alt="iTeam Project Icon" width="100" loading="lazy">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">iTeam</h4>
-                  <p class="service-item-text">
-                    iTeam is a project capable of creating teams of employees based on the
-                    requirements of the project that has to be carried out.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://github.com/GennaroCecco/ProgettoTSW2021" class="a-projects" target="_blank" rel="noopener noreferrer">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/pc_world.png" alt="PCWorld Project Icon" width="100" loading="lazy">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">PCWorld</h4>
-                  <p class="service-item-text">
-                    PCWorld is an e-commerce dedicated to expert and non-expert users who are looking for
-                    pre-assembled PCs or individual components for their computer.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://github.com/SystemFormation/AgencyFormation" class="a-projects" target="_blank" rel="noopener noreferrer">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/agency.png" alt="Agency Formation Project Icon" width="100" loading="lazy">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Agency Formation</h4>
-                  <p class="service-item-text">
-                    Agency Formation is a project for employee management and organizational structuring.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://github.com/GennaroCecco/Unity_Projects" class="a-projects" target="_blank" rel="noopener noreferrer">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/unityIcon.png" alt="Unity Projects Icon" width="100" loading="lazy">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Unity Projects</h4>
-                  <p class="service-item-text">
-                    A collection of Unity game development projects exploring various mechanics and interactive experiences.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" class="a-projects" target="_blank" rel="noopener noreferrer">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/rnniconInvert.png" alt="RNN Sentiment Analysis Icon" width="100" loading="lazy">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">RNN Sentiment Analysis</h4>
-                  <p class="service-item-text">
-                    My thesis work is based on the development of 3 RNN models (LSTM, BiLSTM, GRU) for sentiment
-                    analysis. In detail, we compare and evaluate the performance of these 3 models.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Università degli Studi di Salerno</h4>
-              <span>2019 — 2023</span>
-              <p class="timeline-text">
-                I earned a Bachelor's degree in Computer Science, focusing on software development,
-                algorithms, databases, and web programming. During my studies,
-                I worked on practical projects that allowed me to apply theoretical knowledge
-                to real-world scenarios and develop strong problem-solving skills.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">I.I.S. "G. Marconi"</h4>
-              <span>2016 — 2019</span>
-              <p class="timeline-text">
-                I completed my final years of high school at the I.I.S. 'G. Marconi' institute, with a focus on computer science.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ernesto Cesaro Higher Institute</h4>
-              <span>2014 — 2016</span>
-              <p class="timeline-text">
-                For the first two years of high school I studied at the Ernesto Cesaro Higher Institute.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- WORK EXPERIENCE -->
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Work Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer - Lutech SpA</h4>
-              <span>May 2024 — Present</span>
-              <p class="timeline-text">
-                As a Software Engineer at Lutech SpA, I contribute to full-stack development
-                projects in the Public Administration & Government domain, with the following responsibilities:
-              </p>
-              <ul class="timeline-list-details" style="color: var(--light-gray);">
-                <li><strong>&#8226; Full-Stack Development:</strong> Build and optimize web applications using Java, SQL, HTML, CSS, JavaScript, Ajax, and Bootstrap</li>
-                <li><strong>&#8226; Modular Architecture:</strong> Design scalable applications following separation of concerns principles, creating independent and reusable modules</li>
-                <li><strong>&#8226; System Integration:</strong> Develop interoperability solutions and implement REST APIs for seamless communication between applications</li>
-                <li><strong>&#8226; Job Scheduling:</strong> Design and implement automated scheduled tasks using Quartz framework for batch operations and background processes</li>
-                <li><strong>&#8226; Requirements Analysis:</strong> Transform client requirements into clear technical specifications and development tasks</li>
-                <li><strong>&#8226; Technical Documentation:</strong> Work autonomously with REST API specifications, system architecture documents, and integration guides</li>
-                <li><strong>&#8226; Data Visualization:</strong> Leverage Qlik Cloud for data integration and visualization</li>
-                <li><strong>&#8226; Quality Assurance:</strong> Maintain comprehensive documentation and implement performance improvements</li>
-              </ul>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Developer - IT.SVIL</h4>
-              <span>January 2024 — April 2024</span>
-              <p class="timeline-text">
-                Contributed to software development projects, gaining hands-on experience in full-stack development 
-                and collaborative team environments.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!-- SKILLS -->
-        <div class="skills-container">
-          <section class="skill">
-
-            <h3 class="h3 skills-title">My Skills</h3>
-
-            <ul class="skills-list content-card">
-              
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Web Design</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Java</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">HTML</h5>
-                  <data value="80">80%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">CSS</h5>
-                  <data value="70">70%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">SQL</h5>
-                  <data value="80">80%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Unity</h5>
-                  <data value="70">70%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Java for Android</h5>
-                  <data value="70">70%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Python</h5>
-                  <data value="65">65%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 65%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Bootstrap</h5>
-                  <data value="60">60%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 60%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Qlik Cloud</h5>
-                  <data value="50">50%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">REST APIs</h5>
-                  <data value="80">80%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%;"></div>
-                </div>
-              </li>
-
-              <!-- SOFT SKILLS -->
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Team Working</h5>
-                  <data value="100">100%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 100%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Problem Solving</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Critical Thinking</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Decision Making</h5>
-                  <data value="85">85%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 85%;"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Open-mindedness</h5>
-                  <data value="90">90%</data>
-                </div>
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%;"></div>
-                </div>
-              </li>
-
-            </ul>
-
-            <div class="pagination">
-              <button class="prev-button" aria-label="Previous skills">Back</button>
-              <button class="next-button" aria-label="Next skills">Next</button>
-            </div>
-
-          </section>
-        </div>
-
-      </article>
-
     </div>
+  </div>
 
-  </main>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container-fluid px-4 px-lg-5">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Gennaro</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">
+              <span class="nav-number">01.</span> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <span class="nav-number">02.</span> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">
+              <span class="nav-number">03.</span> Experience
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">
+              <span class="nav-number">04.</span> Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">
+              <span class="nav-number">05.</span> Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <span class="nav-number">06.</span> Contact
+            </a>
+          </li>
+        </ul>
+        <a href="./assets/documents/CV_GENNARO_CECCO.pdf" class="btn btn-outline-primary ms-lg-3" download>
+          <i class="bi bi-download me-2"></i>Resume
+        </a>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Social Sidebar -->
+  <div class="social-sidebar">
+    <a href="https://github.com/GennaroCecco" target="_blank" rel="noopener noreferrer" class="social-link" data-text="GitHub">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" target="_blank" rel="noopener noreferrer" class="social-link" data-text="LinkedIn">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer" class="social-link" data-text="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="mailto:gennarocecco122@gmail.com" class="social-link" data-text="Email">
+      <i class="bi bi-envelope-fill"></i>
+    </a>
+    <div class="social-line"></div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-8">
+          <div class="hero-content">
+            <p class="hero-greeting fade-in" data-delay="0">Hi, my name is</p>
+            <h1 class="hero-name fade-in" data-delay="100">
+              Gennaro Cecco<span class="text-primary">.</span>
+            </h1>
+            <h2 class="hero-title fade-in" data-delay="200">
+              I build digital experiences that people enjoy using.
+            </h2>
+            <p class="hero-description fade-in" data-delay="300">
+              I'm a <strong>Software Engineer</strong> specializing in building exceptional digital experiences. 
+              Currently, I'm focused on building accessible, human-centered products at 
+              <a href="#" class="text-primary">Lutech SpA</a>.
+            </p>
+            <div class="hero-cta fade-in" data-delay="400">
+              <a href="#projects" class="btn btn-primary btn-lg me-3">
+                View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg">
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <p class="scroll-text">Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-number">02.</span>
+          About Me
+        </h2>
+      </div>
+      
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="about-content">
+            <p class="lead">
+              Hello! I'm Gennaro, a software engineer based in Naples, Italy with a passion for creating 
+              innovative digital solutions.
+            </p>
+            <p>
+              My journey in software development began during my studies at 
+              <strong>Università degli Studi di Salerno</strong>, where I discovered my love for 
+              problem-solving through code. Since then, I've had the privilege of working on various 
+              projects ranging from e-commerce platforms to machine learning applications.
+            </p>
+            <p>
+              Fast-forward to today, and I've had the opportunity to work at 
+              <strong class="text-primary">Lutech SpA</strong>, where I contribute to full-stack 
+              development projects in the Public Administration & Government domain.
+            </p>
+            <p>
+              I'm constantly seeking new challenges and opportunities to grow my skills while building 
+              products that make a difference.
+            </p>
+            
+            <div class="about-quote mt-4">
+              <i class="bi bi-quote"></i>
+              <p class="fst-italic">
+                You have to learn the rules of the game. And then you have to play better than anyone else.
+              </p>
+              <p class="quote-author">— Albert Einstein</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-5">
+          <div class="about-image">
+            <div class="about-image-wrapper">
+              <img src="./assets/images/my-avatar.png" alt="Gennaro Cecco" class="img-fluid">
+              <div class="about-image-overlay"></div>
+            </div>
+          </div>
+          
+          <div class="about-stats mt-4">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="stat-card">
+                  <h3 class="stat-number" data-target="10">0</h3>
+                  <p class="stat-label">Projects</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <h3 class="stat-number" data-target="2">0</h3>
+                  <p class="stat-label">Years Experience</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <h3 class="stat-number" data-target="15">0</h3>
+                  <p class="stat-label">Technologies</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <h3 class="stat-number" data-target="100" data-infinite="true">0</h3>
+                  <p class="stat-label">Commits</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-padding bg-dark-gradient">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-number">03.</span>
+          Where I've Worked
+        </h2>
+      </div>
+      
+      <div class="experience-wrapper">
+        <!-- Tab Navigation -->
+        <ul class="nav nav-pills experience-tabs" role="tablist">
+          <li class="nav-item active" role="presentation">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#lutech" type="button">
+              Lutech SpA
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#itsvil" type="button">
+              IT.SVIL
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#unisa" type="button">
+              UNISA
+            </button>
+          </li>
+        </ul>
+        
+        <!-- Tab Content -->
+        <div class="tab-content experience-content">
+          <!-- Lutech -->
+          <div class="tab-pane fade" id="lutech" role="tabpanel">
+            <h3 class="experience-title">
+              Software Engineer 
+              <span class="text-primary">@ Lutech SpA</span>
+            </h3>
+            <p class="experience-date">May 2024 - Present</p>
+            <ul class="experience-list">
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Build and optimize web applications using <strong>Java, SQL, HTML, CSS, JavaScript, Ajax, and Bootstrap</strong>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Design scalable applications following <strong>separation of concerns principles</strong>, creating independent and reusable modules
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Develop interoperability solutions and implement <strong>REST APIs</strong> for seamless communication between applications
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Design and implement automated scheduled tasks using <strong>Quartz framework</strong> for batch operations
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Leverage <strong>Qlik Cloud</strong> for data integration and visualization
+              </li>
+            </ul>
+          </div>
+          
+          <!-- IT.SVIL -->
+          <div class="tab-pane fade" id="itsvil" role="tabpanel">
+            <h3 class="experience-title">
+              Software Developer 
+              <span class="text-primary">@ IT.SVIL</span>
+            </h3>
+            <p class="experience-date">January 2024 - April 2024</p>
+            <ul class="experience-list">
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Contributed to <strong>full-stack development projects</strong> gaining hands-on experience
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Worked in <strong>collaborative team environments</strong> following agile methodologies
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Developed and maintained web applications using modern technologies
+              </li>
+            </ul>
+          </div>
+          
+          <!-- UNISA -->
+          <div class="tab-pane fade" id="unisa" role="tabpanel">
+            <h3 class="experience-title">
+              Computer Science Student 
+              <span class="text-primary">@ Università degli Studi di Salerno</span>
+            </h3>
+            <p class="experience-date">2019 - 2023</p>
+            <ul class="experience-list">
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Earned <strong>Bachelor's degree in Computer Science</strong> focusing on software development, algorithms, and databases
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Developed thesis on <strong>RNN models (LSTM, BiLSTM, GRU)</strong> for sentiment analysis
+              </li>
+              <li>
+                <i class="bi bi-chevron-right text-primary"></i>
+                Worked on practical projects applying theoretical knowledge to real-world scenarios
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-number">04.</span>
+          Things I've Built
+        </h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Featured Project 1 -->
+        <div class="project-card featured">
+          <div class="project-content">
+            <p class="project-label">Featured Project</p>
+            <h3 class="project-title">
+              <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" target="_blank">
+                RNN Sentiment Analysis
+              </a>
+            </h3>
+            <div class="project-description">
+              <p>
+                Thesis project developing and comparing three RNN models (LSTM, BiLSTM, GRU) for sentiment analysis. 
+                Comprehensive evaluation of model performance with detailed metrics and visualizations.
+              </p>
+            </div>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>Keras</li>
+              <li>LSTM</li>
+              <li>NLP</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" target="_blank" class="project-link">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-image">
+            <a href="https://github.com/GennaroCecco/Sentiment_Analysis.git" target="_blank">
+              <img src="./assets/images/rnniconInvert.png" alt="RNN Sentiment Analysis">
+            </a>
+          </div>
+        </div>
+
+        <!-- Featured Project 2 -->
+        <div class="project-card featured reverse">
+          <div class="project-content">
+            <p class="project-label">Featured Project</p>
+            <h3 class="project-title">
+              <a href="https://github.com/GennaroCecco/iTeam" target="_blank">
+                iTeam - Team Formation System
+              </a>
+            </h3>
+            <div class="project-description">
+              <p>
+                Intelligent team formation system that creates optimal employee teams based on project requirements. 
+                Uses algorithms to match skills, experience, and availability for maximum productivity.
+              </p>
+            </div>
+            <ul class="project-tech">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+              <li>REST API</li>
+              <li>Algorithm</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/GennaroCecco/iTeam" target="_blank" class="project-link">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-image">
+            <a href="https://github.com/GennaroCecco/iTeam" target="_blank">
+              <img src="./assets/images/FIAntastici4.png" alt="iTeam">
+            </a>
+          </div>
+        </div>
+
+        <!-- Other Projects -->
+        <div class="other-projects">
+          <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+          
+          <div class="row g-4">
+            <!-- Project Card 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="small-project-card">
+                <div class="card-header">
+                  <i class="bi bi-folder2-open"></i>
+                  <div class="card-links">
+                    <a href="https://github.com/GennaroCecco/ProgettoTSW2021" target="_blank">
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="card-title">PCWorld E-commerce</h4>
+                <p class="card-description">
+                  E-commerce platform for PC components and pre-assembled systems. Features product catalog, cart, 
+                  user authentication, and order management.
+                </p>
+                <ul class="card-tech">
+                  <li>Java</li>
+                  <li>JSP</li>
+                  <li>MySQL</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="small-project-card">
+                <div class="card-header">
+                  <i class="bi bi-folder2-open"></i>
+                  <div class="card-links">
+                    <a href="https://github.com/SystemFormation/AgencyFormation" target="_blank">
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="card-title">Agency Formation</h4>
+                <p class="card-description">
+                  Employee management and organizational structuring system. Handles HR operations, 
+                  team organization, and project assignments.
+                </p>
+                <ul class="card-tech">
+                  <li>Java</li>
+                  <li>Spring</li>
+                  <li>PostgreSQL</li>
+                  <li>REST</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="small-project-card">
+                <div class="card-header">
+                  <i class="bi bi-folder2-open"></i>
+                  <div class="card-links">
+                    <a href="https://github.com/GennaroCecco/Unity_Projects" target="_blank">
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <h4 class="card-title">Unity Game Projects</h4>
+                <p class="card-description">
+                  Collection of Unity game development projects exploring various game mechanics, 
+                  physics systems, and interactive experiences.
+                </p>
+                <ul class="card-tech">
+                  <li>Unity</li>
+                  <li>C#</li>
+                  <li>Game Dev</li>
+                  <li>Physics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding bg-dark-gradient">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-number">05.</span>
+          Skills & Technologies
+        </h2>
+      </div>
+      
+      <div class="skills-container">
+        <!-- Languages -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="bi bi-code-slash text-primary"></i>
+            Languages
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">C#</span>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="bi bi-stack text-primary"></i>
+            Frameworks & Libraries
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Bootstrap</span>
+            <span class="skill-pill">jQuery</span>
+            <span class="skill-pill">AJAX</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">Keras</span>
+            <span class="skill-pill">Unity</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="bi bi-tools text-primary"></i>
+            Tools & Technologies
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Quartz</span>
+            <span class="skill-pill">Qlik Cloud</span>
+            <span class="skill-pill">Android</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="bi bi-people-fill text-primary"></i>
+            Soft Skills
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Team Working</span>
+            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill">Critical Thinking</span>
+            <span class="skill-pill">Decision Making</span>
+            <span class="skill-pill">Open-mindedness</span>
+            <span class="skill-pill">Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Visualization -->
+      <div class="skill-visualization mt-5">
+        <h3 class="text-center mb-4">Technical Proficiency</h3>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="skill-bar-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Java & Spring Boot</span>
+                <span class="text-primary">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-bar-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Web Development</span>
+                <span class="text-primary">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-bar-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Database & SQL</span>
+                <span class="text-primary">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-bar-item">
+              <div class="d-flex justify-content-between mb-2">
+                <span>REST APIs</span>
+                <span class="text-primary">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header text-center">
+          <h2 class="section-title">
+            <span class="section-number">06.</span>
+            Get In Touch
+          </h2>
+        </div>
+        
+        <div class="contact-content">
+          <h3 class="contact-heading">Let's Work Together!</h3>
+          <p class="contact-text">
+            I'm currently looking for new opportunities and my inbox is always open. 
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          
+          <div class="contact-info">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="contact-card">
+                  <i class="bi bi-envelope-fill"></i>
+                  <h4>Email</h4>
+                  <a href="mailto:gennarocecco122@gmail.com">gennarocecco122@gmail.com</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-card">
+                  <i class="bi bi-phone-fill"></i>
+                  <h4>Phone</h4>
+                  <a href="tel:+393760510635">+39 376 0510635</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="contact-card">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <h4>Location</h4>
+                  <p>Boscotrecase, Naples, Italy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5">
+            <a href="mailto:gennarocecco122@gmail.com" class="btn btn-primary btn-lg">
+              Say Hello <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          Designed & Built by <strong>Gennaro Cecco</strong>
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/GennaroCecco" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- Custom JS -->
   <script src="./assets/js/script.js"></script>
-
-  <!-- Ionicon -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
