@@ -1,15 +1,30 @@
 /*
-  PORTFOLIO GENNARO CECCO
+  PORTFOLIO GENNARO CECCO - FIXED VERSION
 */
 
 // LOADER
 
+// Prevent scrolling while loader is visible
+document.body.classList.add('loading');
+document.body.style.overflow = 'hidden';
+document.documentElement.scrollTop = 0;
+document.body.scrollTop = 0;
+
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
+  
+  // Keep page at top
+  window.scrollTo(0, 0);
+  
   setTimeout(() => {
     loader.classList.add('hidden');
     setTimeout(() => {
       loader.style.display = 'none';
+      // Re-enable scrolling after loader disappears
+      document.body.classList.remove('loading');
+      document.body.style.overflow = '';
+      // Ensure we're still at top
+      window.scrollTo(0, 0);
     }, 500);
   }, 2000);
 });
@@ -70,7 +85,7 @@ function updateActiveNavLink() {
   });
 }
 
-// ANIMATED STATISTICS COUNTER
+// ANIMATED STATISTICS COUNTER - FIXED FOR MOBILE
 
 const stats = document.querySelectorAll('.stat-number');
 let statsAnimated = false;
@@ -124,21 +139,25 @@ function animateStats() {
   statsAnimated = true;
 }
 
-// Trigger stats animation when in viewport
+// FIXED: Lower threshold for mobile devices
 const aboutSection = document.getElementById('about');
+const isMobile = window.innerWidth <= 768;
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       animateStats();
     }
   });
-}, { threshold: 0.5 });
+}, { 
+  threshold: isMobile ? 0.2 : 0.5,  // Lower threshold on mobile
+  rootMargin: '0px 0px -50px 0px'
+});
 
 if (aboutSection) {
   observer.observe(aboutSection);
 }
 
-// SKILL BARS ANIMATION
+// SKILL BARS ANIMATION - FIXED FOR MOBILE
 
 const skillBars = document.querySelectorAll('.skill-bar-fill');
 let skillsAnimated = false;
@@ -163,13 +182,16 @@ const skillsObserver = new IntersectionObserver((entries) => {
       animateSkillBars();
     }
   });
-}, { threshold: 0.5 });
+}, { 
+  threshold: isMobile ? 0.15 : 0.5,  // Lower threshold on mobile
+  rootMargin: '0px 0px -30px 0px'
+});
 
 if (skillsSection) {
   skillsObserver.observe(skillsSection);
 }
 
-// SCROLL REVEAL ANIMATIONS
+// SCROLL REVEAL ANIMATIONS - FIXED FOR MOBILE
 
 const revealElements = document.querySelectorAll('.project-card, .skill-category, .contact-card, .small-project-card');
 
@@ -184,8 +206,8 @@ const revealObserver = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+  threshold: isMobile ? 0.05 : 0.1,  // Even lower threshold on mobile
+  rootMargin: '0px 0px -30px 0px'
 });
 
 revealElements.forEach(el => {
@@ -240,40 +262,44 @@ function typeWriter(element, text, speed = 50) {
 //   }, 500);
 // }
 
-// PARALLAX EFFECT ON HERO IMAGE
+// PARALLAX EFFECT ON HERO IMAGE - DISABLED ON MOBILE FOR PERFORMANCE
 
 const heroImage = document.querySelector('.hero-image');
 
-window.addEventListener('scroll', () => {
-  if (heroImage && window.scrollY < window.innerHeight) {
-    const scrolled = window.scrollY;
-    heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
-  }
-});
+if (!isMobile) {
+  window.addEventListener('scroll', () => {
+    if (heroImage && window.scrollY < window.innerHeight) {
+      const scrolled = window.scrollY;
+      heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+    }
+  });
+}
 
-// PROJECT CARDS TILT EFFECT
+// PROJECT CARDS TILT EFFECT - DISABLED ON MOBILE/TOUCH DEVICES
 
 const projectCards = document.querySelectorAll('.small-project-card');
 
-projectCards.forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+if (!isMobile && !('ontouchstart' in window)) {
+  projectCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = (y - centerY) / 10;
+      const rotateY = (centerX - x) / 10;
+      
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+    });
     
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    
-    const rotateX = (y - centerY) / 10;
-    const rotateY = (centerX - x) / 10;
-    
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    });
   });
-  
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-  });
-});
+}
 
 // SKILL PILLS SHUFFLE ANIMATION
 
@@ -282,10 +308,11 @@ function shuffleSkills() {
   
   skillCategories.forEach(category => {
     const pills = category.querySelectorAll('.skill-pill');
-    const pillsArray = Array.from(pills);
     
-    // Random shuffle animation on hover
-    category.addEventListener('mouseenter', () => {
+    // Random shuffle animation on hover/touch
+    const triggerEvent = isMobile ? 'touchstart' : 'mouseenter';
+    
+    category.addEventListener(triggerEvent, () => {
       pills.forEach((pill, index) => {
         setTimeout(() => {
           pill.style.transform = 'scale(1.1)';
@@ -387,11 +414,12 @@ if (savedTheme === 'light') {
 }
 */
 
-
-
-
+// RE-CHECK ANIMATIONS ON RESIZE (for orientation changes on mobile)
+// Removed automatic reload - not necessary and causes poor UX
+// The observers will work fine without reload
 
 // INITIALIZE
 
 console.log('%c✨ Portfolio Loaded Successfully!', 'font-size: 16px; font-weight: bold; color: #00ff88;');
 console.log('%cBuilt with ❤️ by Gennaro Cecco', 'font-size: 12px; color: #8892b0;');
+console.log(`%c📱 Device: ${isMobile ? 'Mobile' : 'Desktop'}`, 'font-size: 12px; color: #64ffda;');
