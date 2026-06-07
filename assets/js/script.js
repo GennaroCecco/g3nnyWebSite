@@ -18,6 +18,7 @@ window.addEventListener('load', () => {
   
   setTimeout(() => {
     loader.classList.add('hidden');
+    initTypingEffect();
     setTimeout(() => {
       loader.style.display = 'none';
       // Re-enable scrolling after loader disappears
@@ -238,42 +239,51 @@ backToTopBtn.addEventListener('click', () => {
 
 // TYPING EFFECT FOR HERO TITLE
 
-function typeWriter(element, text, speed = 50) {
-  let i = 0;
-  element.textContent = '';
-  
+const typingPhrases = [
+  "I build digital experiences that people enjoy using.",
+  "I develop robust Java backend systems.",
+  "I explore Machine Learning & AI applications."
+];
+
+function initTypingEffect() {
+  const heroTitle = document.querySelector('.hero-title');
+  if (!heroTitle) return;
+
+  heroTitle.setAttribute('aria-label', typingPhrases[0]);
+  heroTitle.innerHTML = '<span id="typingText" aria-hidden="true"></span><span class="typing-cursor" aria-hidden="true"></span>';
+
+  const el = document.getElementById('typingText');
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
   function type() {
-    if (i < text.length) {
-      element.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, speed);
+    const current = typingPhrases[phraseIndex];
+    if (isDeleting) {
+      el.textContent = current.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % typingPhrases.length;
+        heroTitle.setAttribute('aria-label', typingPhrases[phraseIndex]);
+        setTimeout(type, 400);
+        return;
+      }
+      setTimeout(type, 30);
+    } else {
+      el.textContent = current.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === current.length) {
+        setTimeout(() => { isDeleting = true; type(); }, 2500);
+        return;
+      }
+      setTimeout(type, 55);
     }
   }
-  
+
   type();
 }
 
-// Uncomment to enable typing effect
-// const heroTitle = document.querySelector('.hero-title');
-// if (heroTitle) {
-//   const originalText = heroTitle.textContent;
-//   setTimeout(() => {
-//     typeWriter(heroTitle, originalText, 50);
-//   }, 500);
-// }
-
-// PARALLAX EFFECT ON HERO IMAGE - DISABLED ON MOBILE FOR PERFORMANCE
-
-const heroImage = document.querySelector('.hero-image');
-
-if (!isMobile) {
-  window.addEventListener('scroll', () => {
-    if (heroImage && window.scrollY < window.innerHeight) {
-      const scrolled = window.scrollY;
-      heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
-    }
-  });
-}
 
 // PROJECT CARDS TILT EFFECT - DISABLED ON MOBILE/TOUCH DEVICES
 
@@ -362,10 +372,9 @@ function activateKonamiCode() {
 
 // DYNAMIC YEAR IN FOOTER
 
-const footerText = document.querySelector('.footer-text');
-if (footerText && footerText.textContent.includes('2024')) {
-  const currentYear = new Date().getFullYear();
-  footerText.textContent = footerText.textContent.replace('2024', currentYear);
+const yearSpan = document.getElementById('currentYear');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
 }
 
 // KEYBOARD NAVIGATION
@@ -395,24 +404,6 @@ if ('PerformanceObserver' in window) {
   perfObserver.observe({ entryTypes: ['paint'] });
 }
 
-// THEME TOGGLE (OPTIONAL)
-
-// Uncomment to add light/dark theme toggle
-/*
-let isDarkMode = true;
-
-function toggleTheme() {
-  isDarkMode = !isDarkMode;
-  document.body.classList.toggle('light-mode');
-  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-}
-
-// Check saved preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'light') {
-  toggleTheme();
-}
-*/
 
 // RE-CHECK ANIMATIONS ON RESIZE (for orientation changes on mobile)
 // Removed automatic reload - not necessary and causes poor UX

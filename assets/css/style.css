@@ -245,6 +245,14 @@ body {
   width: 80%;
 }
 
+.nav-link.active {
+  color: var(--primary) !important;
+}
+
+.nav-link.active::before {
+  width: 80%;
+}
+
 /* ========================================
    SOCIAL SIDEBAR
    ======================================== */
@@ -327,6 +335,21 @@ body {
 @keyframes pulse {
   0%, 100% { opacity: 0.5; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.1); }
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 255, 136, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
@@ -465,6 +488,21 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background-color: var(--primary);
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  animation: cursor-blink 0.75s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 /* ========================================
@@ -621,12 +659,32 @@ body {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  transition: var(--transition);
+}
+
+.about-image-wrapper:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 136, 0.15);
 }
 
 .about-image-wrapper img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.about-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 50%, rgba(0, 255, 136, 0.08));
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.about-image-wrapper:hover .about-image-overlay {
+  opacity: 0;
 }
 
 /* Stats */
@@ -1367,7 +1425,7 @@ body {
   .experience-wrapper {
     flex-direction: column;
   }
-  
+
   .experience-tabs {
     flex-direction: row;
     overflow-x: auto;
@@ -1375,25 +1433,37 @@ body {
     gap: 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    padding: 0 0 0.5rem 0;
+    margin-bottom: 1rem;
   }
-  
+
   .experience-tabs::-webkit-scrollbar {
     display: none;
   }
-  
+
+  .experience-tabs .nav-item {
+    flex-shrink: 0;
+  }
+
   .experience-tabs .nav-link {
     border-left: none;
     border-bottom: 2px solid var(--lightest-navy);
     white-space: nowrap;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem;
     font-size: 0.8125rem;
+    margin-right: 0.75rem;
+    border-radius: 0;
   }
-  
+
+  .experience-tabs .nav-item:last-child .nav-link {
+    margin-right: 0;
+  }
+
   .experience-tabs .nav-link.active {
     border-left: none;
     border-bottom-color: var(--primary);
   }
-  
+
   .experience-content {
     min-height: auto;
     padding-top: 1.5rem;
@@ -1837,62 +1907,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .experience-wrapper {
-    flex-direction: column;
-  }
-  
-  .experience-tabs {
-    flex-direction: row;
-    overflow-x: auto;
-    min-width: 100%;
-    gap: 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding: 0 0 0.5rem 0;
-    margin-bottom: 1rem;
-  }
-  
-  .experience-tabs::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .experience-tabs .nav-item {
-    flex-shrink: 0;
-  }
-  
-  .experience-tabs .nav-link {
-    border-left: none;
-    border-bottom: 2px solid var(--lightest-navy);
-    white-space: nowrap;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.8125rem;
-    margin-right: 0.75rem;
-    border-radius: 0;
-  }
-  
-  .experience-tabs .nav-item:last-child .nav-link {
-    margin-right: 0;
-  }
-  
-  .experience-tabs .nav-link.active {
-    border-left: none;
-    border-bottom-color: var(--primary);
-  }
-  
-  .experience-content {
-    min-height: auto;
-    padding-top: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-tabs .nav-link {
-    padding: 0.625rem 1.25rem;
-    font-size: 0.75rem;
-    margin-right: 0.5rem;
-  }
-}
 
 /* ========================================
    LOADER FIX - Prevent scroll during loading
@@ -1913,23 +1927,4 @@ body.loading {
   position: fixed;
   width: 100%;
   height: 100%;
-}
-
-.loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-bg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.loader-wrapper.hidden {
-  opacity: 0;
-  visibility: hidden;
 }

@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Gennaro Cecco - Software Engineer Portfolio | Full-stack Developer specializzato in Java, Web Development e Machine Learning">
   <meta name="author" content="Gennaro Cecco">
-  
+  <meta name="keywords" content="Gennaro Cecco, Software Engineer, Java Developer, Full-Stack Developer, Naples, Portfolio, Machine Learning">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gennaro Cecco | Software Engineer">
+  <meta property="og:description" content="Software Engineer specializzato in Java, Web Development e Machine Learning. Portfolio di Gennaro Cecco.">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gennaro Cecco | Software Engineer">
+  <meta name="twitter:description" content="Software Engineer specializzato in Java, Web Development e Machine Learning.">
+
   <title>Gennaro Cecco | Software Engineer</title>
   
   <!-- Favicon -->
@@ -24,6 +33,25 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gennaro Cecco",
+    "jobTitle": "Software Engineer",
+    "email": "gennarocecco122@gmail.com",
+    "sameAs": [
+      "https://github.com/GennaroCecco",
+      "https://www.linkedin.com/in/gennaro-cecco-19987a226/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Naples",
+      "addressCountry": "IT"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -134,7 +162,7 @@
             <p class="hero-description fade-in" data-delay="300">
               I'm a <strong>Software Engineer</strong> specializing in building exceptional digital experiences. 
               Currently, I'm focused on building accessible, human-centered products at 
-              <a href="#" class="text-primary">Lutech SpA</a>.
+              <a href="https://www.lutech.group" target="_blank" rel="noopener noreferrer" class="text-primary">Lutech SpA</a>.
             </p>
             <div class="hero-cta fade-in" data-delay="400">
               <a href="#projects" class="btn btn-primary btn-lg me-3">
@@ -256,7 +284,7 @@
         <!-- Tab Navigation -->
         <ul class="nav nav-pills experience-tabs" role="tablist">
           <li class="nav-item active" role="presentation">
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#lutech" type="button">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#lutech" type="button" aria-selected="true">
               Lutech SpA
             </button>
           </li>
@@ -275,7 +303,7 @@
         <!-- Tab Content -->
         <div class="tab-content experience-content">
           <!-- Lutech -->
-          <div class="tab-pane fade" id="lutech" role="tabpanel">
+          <div class="tab-pane fade show active" id="lutech" role="tabpanel">
             <h3 class="experience-title">
               Software Engineer 
               <span class="text-primary">@ Lutech SpA</span>
@@ -712,16 +740,16 @@
     <div class="container">
       <div class="footer-content">
         <p class="footer-text">
-          Designed & Built by <strong>Gennaro Cecco</strong>
+          Designed & Built by <strong>Gennaro Cecco</strong> · <span id="currentYear">2026</span>
         </p>
         <div class="footer-links">
-          <a href="https://github.com/GennaroCecco" target="_blank">
+          <a href="https://github.com/GennaroCecco" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" target="_blank">
+          <a href="https://www.linkedin.com/in/gennaro-cecco-19987a226/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <i class="bi bi-linkedin"></i>
           </a>
-          <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+          <a href="https://instagram.com/genny__cecco?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <i class="bi bi-instagram"></i>
           </a>
         </div>
